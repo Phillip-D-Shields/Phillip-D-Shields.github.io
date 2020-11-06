@@ -4,9 +4,8 @@
 
 <style>
   nav {
-    background-color: #2B3942;
+    background-color: #2b3942;
     position: fixed;
-
   }
 
   ul {
@@ -38,7 +37,7 @@
   nav:hover .logo i {
     transform: rotate(-180deg);
     color: #c26838;
-    text-shadow: 0 0 .75rem #c26838;
+    text-shadow: 0 0 0.75rem #c26838;
     filter: grayscale(0%) opacity(1);
   }
 
@@ -53,13 +52,12 @@
     text-decoration: none;
     filter: grayscale(100%) opacity(0.7);
     transition: 200ms;
-    
   }
 
   a:hover {
     filter: grayscale(0%) opacity(1);
     color: #a99245;
-    text-shadow: 0 0 .75rem #a99245;
+    text-shadow: 0 0 0.75rem #a99245;
   }
 
   a i {
@@ -71,7 +69,7 @@
 
   .selected {
     color: #5e9159;
-    text-shadow: 0 0 .75rem #5e9159;
+    text-shadow: 0 0 0.75rem #5e9159;
     filter: grayscale(5%) opacity(0.9);
   }
 
@@ -108,26 +106,39 @@
 
 <nav>
   <ul>
-    <li class="logo">
-      <i class="fab fa-galactic-republic fa-3x"></i>
-    </li>
+    <li class="logo"><i class="fab fa-galactic-republic fa-3x" /></li>
     <li>
-      <a class:selected={segment === undefined} aria-current='{segment === undefined ? "page" : undefined}' href=".">
-        
-        <i class="fas fa-globe fa-2x"></i>
+      <a
+        class:selected={segment === undefined}
+        aria-current={segment === undefined ? 'page' : undefined}
+        href=".">
+        <i class="fas fa-globe fa-2x" />
       </a>
     </li>
     <li>
-      <a class:selected={segment === "about"} aria-current='{segment === "about" ? "page" : undefined}' href="about"
-        > <i class="fas fa-user-astronaut fa-2x"></i
-      ></a>
+      <a
+        class:selected={segment === 'about'}
+        aria-current={segment === 'about' ? 'page' : undefined}
+        href="about">
+        <i class="fas fa-user-astronaut fa-2x" /></a>
     </li>
     <li>
-      <a class:selected={segment === "portfolio"} aria-current='{segment === "portfolio" ? "page" : undefined}' href="portfolio"
-      > <i class="fas fa-atom fa-2x"></i
-    ></a>
+      <a
+        class:selected={segment === 'portfolio'}
+        aria-current={segment === 'portfolio' ? 'page' : undefined}
+        href="portfolio">
+        <i class="fas fa-atom fa-2x" />
+      </a>
     </li>
-    <li><a href="#"><i class="fab fa-linkedin fa-2x"></i></a></li>
-    <li><a href="#"><i class="fab fa-github-square fa-2x"></i></a></li>
+    <li>
+      <a href="www.linkedin.com/in/phillip-d-shields" rel="noopener norefer">
+        <i class="fab fa-linkedin fa-2x" />
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/Phillip-D-Shields" rel="noopener norefer">
+        <i class="fab fa-github-square fa-2x" />
+      </a>
+    </li>
   </ul>
 </nav>
