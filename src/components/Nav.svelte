@@ -131,7 +131,7 @@
       </a>
     </li>
     <li>
-      <a href="www.linkedin.com/in/phillip-d-shields" rel="noopener norefer">
+      <a href="www.https://linkedin.com/in/phillip-d-shields" rel="noopener norefer">
         <i class="fab fa-linkedin fa-2x" />
       </a>
     </li>
