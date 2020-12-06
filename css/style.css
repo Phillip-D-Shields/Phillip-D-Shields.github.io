@@ -1,0 +1,151 @@
+/*******************************************************************************
+MeyerWeb Reset
+*******************************************************************************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*******************************************************************************
+Theme Styles
+*******************************************************************************/
+
+
+:root {
+    --shade0: #23292d;
+    --shade1: #42474b;
+    --shade2: #616668;
+    --shade3: #808486;
+    --shade4: #a0a2a4;
+    --shade5: #bfc0c2;
+    --shade6: #dedfdf;
+    --shade7: #fdfdfd;
+    --accent0: #ef4e7c;
+    --accent1: #f37055;
+    --accent2: #f79532;
+    --accent3: #6ebb82;
+    --accent4: #09b399;
+    --accent5: #1299ad;
+    --accent6: #5073b8;
+    --accent7: #a067ab;
+  }
+
+  * {
+      box-sizing: border-box;
+  }
+
+  body {
+      background-color: var(--shade7);
+      padding: 0;
+      margin: 0;
+  }
+
+  nav {
+      background-color: var(--accent3);
+      color: var(--shade7);
+      padding: .75rem;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      font-size: 1.75rem;
+      text-align: center;
+  }
+
+  a {
+      color: var(--shade1);
+      text-decoration: none;
+      font-size: 1.25rem;
+      margin: .75rem;
+  }
+
+  a:hover {
+      color: var(--shade0);
+      text-shadow: 0 0 .75rem var(--shade0);
+  }
+
+  main {
+      padding: 6rem 1rem 3rem 1rem;
+      background-color: var(--shade7);
+      color: var(--shade0);
+      max-width: 980px;
+      margin: 2rem auto;
+  }
+
+  h1 {
+    font-size: 6rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    padding: .75rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+  }
+
+  h4{
+    font-size: 2rem;
+    padding: 0.25rem;
+  }
+
+  h5{
+    font-size: 1.75rem;
+    padding: 0.25rem;
+  }
+  h6{
+    font-size: 1.25rem;
+    padding: 0.25rem;
+  }
+
+  .gallery-grid {
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: repeat(2, 1fr);
+    justify-content: space-evenly;
+
+  }
+
+  img {
+    max-width: 500px;
+    max-height: 500px;
+  }
