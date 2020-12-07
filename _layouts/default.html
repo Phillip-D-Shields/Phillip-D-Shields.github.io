@@ -4,23 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    {% seo %}
   </head>
   <body>
-    <nav>
-      <h4>
-          <!-- add blinking animation via keyframes -->
-        phillip-d-shields.github.io{{ page.permalink }}<span class="blinking">_</span>
-      </h4>
-      <a href="/">home</a>
-      <a href="/about/">about</a>
-      <a href="/gallery/">gallery</a>
-      <a href="/connect/">connect</a>
-    </nav>
-    <main>
-      <h1>{{ page.title }}</h1>
-      {{ content }}
-    </main>
-    <footer>&copy; pds2021</footer>
+    <header>
+      
+      <nav class="nav-links">
+        <a href="/index">home</a>
+        <a href="/about">about</a>
+        <a href="/gallery">gallery</a>
+        <a href="/connect">connect</a>
+      </nav>
+      <h3>{{ page.title }}</h3>
+    </header>
+    <main>{{ content }}</main>
   </body>
 </html>
