@@ -1,0 +1,55 @@
+<style>
+  section {
+    width: 90%;
+    border-radius: .25rem;
+    overflow: hidden;
+  }
+
+  .card {
+    padding: 1rem;
+    background-color: var(--shade7);
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .card--img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card div {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+  }
+
+  @media screen and (max-width: 1050px) {
+      section {
+          width: 100%;
+      }
+      .card {
+          padding: .25rem;
+          flex-direction: column;
+          justify-content: center;
+      }
+      .card div {
+          padding: .25rem;
+      }
+  }
+</style>
+
+{% include header.html %}
+<section>
+  {% for image in page.images %}
+  <figure class="card">
+    <img class="card--img" src="{{ image.url }}" alt="{{ image.caption }}" />
+    <div>
+      <h4>{{ image.caption }}</h4>
+      <h5>{{ image.details }}</h5>
+    </div>
+  </figure>
+  {% endfor %}
+</section>
+{% include footer.html %}
