@@ -41,37 +41,48 @@ table {
 Theme Styles
 *******************************************************************************/
 :root {
-  --shade0: #edebe8;
-  --shade1: #d5d4d0;
-  --shade2: #bcbcb7;
-  --shade3: #a4a59f;
-  --shade4: #8b8e87;
-  --shade5: #73776f;
-  --shade6: #5a5f56;
-  --shade7: #42483e;
-  --accent0: #ab5b51;
-  --accent1: #b97b49;
-  --accent2: #c49f47;
-  --accent3: #82ab55;
-  --accent4: #59b07f;
-  --accent5: #70a4b9;
-  --accent6: #9d7a9a;
-  --accent7: #b2889b;
-}
+  --shade0: #FDF6E3;
+  --shade1: #EEE8D5;
+  --shade2: #93A1A1;
+  --shade3: #839496;
+  --shade4: #657B83;
+  --shade5: #586E75;
+  --shade6: #073642;
+  --shade7: #002B36;
+  --accent0: #DC322F;
+  --accent1: #CB4B16;
+  --accent2: #B58900;
+  --accent3: #859900;
+  --accent4: #2AA198;
+  --accent5: #268BD2;
+  --accent6: #6C71C4;
+  --accent7: #D33682;}
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  box-sizing: border-box;
-  color: var(--shade7);
-  background: var(--shade0);
-  font-size: 1.25rem;
+  color: var(--shade1);
+  // background: url('../img/lt-bg.png');
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: cover;
+  background-color: var(--shade6);
+  font-size: 1.05rem;
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   padding: 2rem;
+}
+
+.header--title {
+ padding-left: 4rem;
+}
+
+main {
+  max-width: 850px;
+  margin: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -121,7 +132,7 @@ a {
   text-decoration: none;
   color: var(--accent1);
   text-shadow: none;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin: 0 .5rem;
 
   transition: color 0.5s ease;
@@ -152,8 +163,8 @@ strong {
 
 
 img {
-  width: 75%;
-  max-width: 400px;
+  width: 100%;
+  max-width: 500px;
   height: auto;
   border-radius: .25rem;
   border: .5rem solid var(--accent4);
@@ -189,8 +200,8 @@ pre code {
 }
 
 blockquote {
-  color: var(--shade7);
-  margin-bottom: 2rem;
+  color: var(--shade1);
+  margin-bottom: .5rem;
   padding: 0 0 0 .75rem;
   border-left: .25rem solid var(--accent4);
 }
@@ -257,3 +268,18 @@ form {
   padding: 20px;
 }
 
+@media screen and (max-width: 1050px) {
+  body {
+    padding: .75rem;
+  }
+  .header--title {
+    padding-left: 0;
+   }
+   h1, h2 {
+     font-size: 3rem;
+   }
+   h3, h4, h5, h6 {
+     font-size: 1.25rem;
+   }
+
+}

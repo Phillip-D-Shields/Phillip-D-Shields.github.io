@@ -2,6 +2,6 @@
 
 layout: default
 permalink: /
-title: portfolio 2021
+title: 2021 portfolio of
 ---
 {% include hero.html %}

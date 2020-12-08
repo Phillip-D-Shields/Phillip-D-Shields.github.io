@@ -1,7 +1,6 @@
 --- 
 layout: default
-title: connect
+title: under construction
 permalinkL: /connect
 ---
 
-##### {{ site.title }}

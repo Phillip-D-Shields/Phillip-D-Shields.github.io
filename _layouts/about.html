@@ -1,0 +1,21 @@
+<style>
+    section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+{% include header.html %}
+
+<section>
+    
+    <img src="{{  }}" alt="">
+    <div>
+        {% for snippet in page.snippets %}
+        <blockquote>{{ snippet }}</blockquote>
+    </div>
+</section>
+
+{% include footer.html %}

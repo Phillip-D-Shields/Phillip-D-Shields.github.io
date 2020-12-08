@@ -2,6 +2,7 @@
 layout: default
 title: 
 permalink: /about
+details: 
 ---
 ![github avatar](https://avatars0.githubusercontent.com/u/28024295?s=400&u=36bf6279c8188ab74b05810367a7708e5b289ac2&v=4)
 
