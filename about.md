@@ -1,16 +1,11 @@
 ---
-layout: default
+layout: about
 title: 
 permalink: /about
-details: 
+img: ../assets/img/about.jpg
+snippets: 
+    - <h5>I'm a front end developer. I love playing with all most things web, especially <a href="https://reactjs.org/">React</a>, <a href="https://svelte.dev/">Svelte</a>, and <a href="https://tailwindcss.com/">Tailwind CSS</a></h5>
+    - <h5>I enjoy improving my JavaScript skills using <a href="https://exercism.io/profiles/Phillip-D-Shields">exercism.io</a> and <a href="https://www.typescriptlang.org/">TypeScript</a></h5>
+    - <h5>I am the founder and current president of <a href="https://nisa-nz.github.io/">NISA</a>, as well as a <a href="https://githubcampus.expert/Phillip-D-Shields/">GitHub Campus Expert</a></h5>
+    - <h5>I am currently studying Information Technology at Nelson Marlborough Institute of Technology in Nelson, New Zealand</h5>
 ---
-![github avatar](https://avatars0.githubusercontent.com/u/28024295?s=400&u=36bf6279c8188ab74b05810367a7708e5b289ac2&v=4)
-
-##### Kiaora! I'm Phill. 
-> I'm a front end developer. I love playing with all most things web, especially [React](https://reactjs.org/), [Svelte](https://svelte.dev/), and [Tailwind CSS](https://tailwindcss.com/). 
-
-> I enjoy improving my JavaScript skills using [exercism.io](https://exercism.io/profiles/Phillip-D-Shields) and [TypeScript](https://www.typescriptlang.org/). 
-
-> I am the founder and current president of [NISA](https://nisa-nz.github.io/), as well as a [GitHub Campus Expert](https://githubcampus.expert/Phillip-D-Shields/)
-
-> I am currently studying Information Technology at Nelson Marlborough Institute of Technology in Nelson, New Zealand.

@@ -81,7 +81,7 @@ body {
 }
 
 main {
-  max-width: 850px;
+  max-width: 1050px;
   margin: auto;
 }
 
@@ -162,13 +162,6 @@ strong {
 }
 
 
-img {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  border-radius: .25rem;
-  border: .5rem solid var(--accent4);
-}
 
 pre, code {
   color: var(--accent4);
@@ -268,6 +261,14 @@ form {
   padding: 20px;
 }
 
+// ! classes
+// ! =======================================================
+
+
+
+
+// ! breakpoints 1050, 
+// ! =======================================================
 @media screen and (max-width: 1050px) {
   body {
     padding: .75rem;

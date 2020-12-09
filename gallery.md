@@ -1,13 +1,15 @@
 ---
 layout: galleryDisplay
-title: under construction
+title: gallery
 permalink: /gallery
 images:
-  - url: https://images.unsplash.com/photo-1605695681257-7dee752085a6?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80
-    caption: first image
-    details: some basic info here about the project being displayed. one or two sentences should suffice
-  - url: https://images.unsplash.com/photo-1516319915504-015b432d407c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1026&q=80
-    caption: second image
-    details: some basic info here about the project being displayed. one or two sentences should suffice
-
+  - url: ../assets/img/nisa-io.png
+    caption: NISA landing page
+    details: Nelson IT Students Association. Created using Jekyll and GitHub Pages
+  - url: ../assets/img/nisa-re.png
+    caption: NISA resources page
+    details: A collection of useful links for NISA members
+  - url: ../assets/img/nisa-io.png
+    caption: Under Construction
+    details: Adding more of my projects when I get a chance
 ---
