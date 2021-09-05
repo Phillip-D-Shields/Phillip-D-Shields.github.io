@@ -15,7 +15,7 @@ const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerH
 
 // ! renderer =====================
 const renderer = new THREE.WebGL1Renderer({
-  canvas: document.querySelector("#bg"),
+    canvas: document.querySelector("#bg"),
 
 })
 
@@ -24,12 +24,12 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 
 camera.position.setZ(0);
 
-renderer.render( scene, camera )
+renderer.render(scene, camera)
 
 // ! torus shape object ==============
-const geometry = new THREE.RingGeometry( 0.75, 250, 250, 200 )
-const material = new THREE.MeshBasicMaterial({color: 0x9E0303, wireframe: true, });
-const torus = new THREE.Mesh( geometry, material )
+const geometry = new THREE.RingGeometry(0.75, 250, 250, 200)
+const material = new THREE.MeshBasicMaterial({ color: 0x1299ad, wireframe: true, });
+const torus = new THREE.Mesh(geometry, material)
 
 scene.add(torus);
 
@@ -52,13 +52,13 @@ const controls = new OrbitControls(camera, renderer.domElement)
 
 // ! stars ===============================
 const addStar = () => {
-  const geometry = new THREE.SphereGeometry(0.05, 2, 2)
-  const material = new THREE.MeshStandardMaterial({ color: 0xEBE834 })
-  const star = new THREE.Mesh( geometry, material )
+    const geometry = new THREE.SphereGeometry(0.05, 2, 2)
+    const material = new THREE.MeshStandardMaterial({ color: 0x42474b })
+    const star = new THREE.Mesh(geometry, material)
 
-  const [x,y,z] = Array(3).fill().map(()=> THREE.MathUtils.randFloatSpread(100))
-  star.position.set(x,y,z)
-  scene.add(star)
+    const [x, y, z] = Array(3).fill().map(() => THREE.MathUtils.randFloatSpread(100))
+    star.position.set(x, y, z)
+    scene.add(star)
 }
 
 Array(500).fill().forEach(addStar)
@@ -72,8 +72,8 @@ Array(500).fill().forEach(addStar)
 const phillTexture = new THREE.TextureLoader().load(phillImg)
 
 const phillCube = new THREE.Mesh(
-  new THREE.PlaneGeometry(3,3),
-  new THREE.MeshBasicMaterial({ map: phillTexture })
+    new THREE.PlaneGeometry(3, 3),
+    new THREE.MeshBasicMaterial({ map: phillTexture })
 )
 
 scene.add(phillCube)
@@ -84,8 +84,8 @@ scene.add(phillCube)
 // const marsTexture = new THREE.TextureLoader().load(marsImg)
 
 const mars = new THREE.Mesh(
-  new THREE.SphereGeometry(50, 150, 150),
-  new THREE.MeshBasicMaterial({ color: 0x000, wireframe: true })
+    new THREE.SphereGeometry(50, 150, 150),
+    new THREE.MeshBasicMaterial({ color: 0x42474b, wireframe: true })
 )
 
 scene.add(mars)
@@ -94,9 +94,9 @@ scene.add(mars)
 // const earthTexture = new THREE.TextureLoader().load(earthImg)
 
 const earth = new THREE.Mesh(
-  new THREE.SphereGeometry(100, 300, 300),
-  new THREE.MeshBasicMaterial({ color: 0x0592EB, wireframe: true }),
-  
+    new THREE.SphereGeometry(100, 300, 300),
+    new THREE.MeshBasicMaterial({ color: 0x1299ad, wireframe: true }),
+
 )
 
 scene.add(earth)
@@ -138,32 +138,32 @@ earth.position.x = 25;
 // ! animation loop
 
 function animate() {
-  requestAnimationFrame(animate);
+    requestAnimationFrame(animate);
 
-  camera.position.z += 0.1;
-  camera.position.x += 0.0002;
-  camera.position.y += 0.0002;
+    camera.position.z += 0.1;
+    camera.position.x += 0.0002;
+    camera.position.y += 0.0002;
 
-  torus.rotation.x += 0.001;
-  torus.rotation.y += 0.001;
-  // torus.rotation.z += 0.0005;
+    torus.rotation.x += 0.001;
+    torus.rotation.y += 0.001;
+    // torus.rotation.z += 0.0005;
 
-  mars.position.x -= 0.001;
-  earth.position.x += 0.001;
+    mars.position.x -= 0.001;
+    earth.position.x += 0.001;
 
-  mars.position.y -= 0.001;
-  earth.position.z += 0.001;
+    mars.position.y -= 0.001;
+    earth.position.z += 0.001;
 
-  mars.rotation.y += 0.001;
-  earth.rotation.y -= 0.001;
+    mars.rotation.y += 0.001;
+    earth.rotation.y -= 0.001;
 
-  phillCube.rotation.x -= 0.001;
-  phillCube.rotation.y -= 0.001;
-  phillCube.position.z += 0.065
-  phillCube.position.y += 0.025
-  // controls.update();
+    phillCube.rotation.x -= 0.001;
+    phillCube.rotation.y -= 0.001;
+    phillCube.position.z += 0.065
+    phillCube.position.y += 0.025
+        // controls.update();
 
-  renderer.render(scene, camera);
+    renderer.render(scene, camera);
 }
 
 animate();
