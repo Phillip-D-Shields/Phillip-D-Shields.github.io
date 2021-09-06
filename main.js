@@ -85,7 +85,7 @@ scene.add(phillCube)
 
 const mars = new THREE.Mesh(
     new THREE.SphereGeometry(50, 150, 150),
-    new THREE.MeshBasicMaterial({ color: 0x42474b, wireframe: true })
+    new THREE.MeshBasicMaterial({ color: 0x23292d, wireframe: true })
 )
 
 scene.add(mars)
@@ -95,7 +95,7 @@ scene.add(mars)
 
 const earth = new THREE.Mesh(
     new THREE.SphereGeometry(100, 300, 300),
-    new THREE.MeshBasicMaterial({ color: 0x1299ad, wireframe: true }),
+    new THREE.MeshBasicMaterial({ color: 0xef4e7c, wireframe: true }),
 
 )
 
