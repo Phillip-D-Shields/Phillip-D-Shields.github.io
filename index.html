@@ -50,67 +50,81 @@
             </p>
         </div>
 
-        <div class="debri">
-            <div class="portfolio">
-                <div class="portfolio--header">
-                    <h2 class="glow">Portfolio</h2>
-                    <h3>
-                        not my stuff, yet. just some filler. those critters are way more interesting anyways
-                    </h3>
-                </div>
-                <div class="portfolio--gallery">
-                    <figure>
-                        <img src="./assets/hetiheti.jpg" alt="hetiheti time" class="gallery--img" />
-                        <figcaption>
-                            Photo by <a href="https://unsplash.com/@alexas_fotos?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alexas_Fotos</a> on <a href="https://unsplash.com/s/photos/hedgehog?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        <!-- portfolio debri -->
+        <div class="debri portfolio">
 
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <img src="./assets/penguin.jpg" alt="penguin time" class="gallery--img" />
-                        <figcaption>
-                            Photo by
-                            <a href="https://unsplash.com/@goosegrease?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Derek Oyen</a
-                >
-                on
-                <a
-                  href="https://unsplash.com/s/photos/penguin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-                  >Unsplash</a
-                >
-              </figcaption>
-            </figure>
-          </div>
+            <div class="tab">
+                <button class="tablinks active" onclick="openTab(event, 'first')">
+            first thing
+          </button>
+                <button class="tablinks" onclick="openTab(event, 'second')">
+            second thing
+          </button>
+                <button class="tablinks" onclick="openTab(event, 'third')">
+            third thing
+          </button>
+                <button class="tablinks" onclick="openTab(event, 'fourth')">
+            fourth thing
+          </button>
+            </div>
+
+            <div id="first" class="tabcontent">
+                <h3>some filler</h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati adipisci corrupti deserunt quidem, quaerat minima similique placeat totam laboriosam rem autem minus accusantium ad.
+                </p>
+            </div>
+
+            <div id="second" class="tabcontent">
+                <h3>second filler</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quidem aliquid accusantium magni nihil, nulla veritatis voluptatem saepe similique, ullam quaerat minima voluptatum. Ab odio alias in earum nostrum dolor?
+                </p>
+            </div>
+
+            <div id="third" class="tabcontent">
+                <h3>third</h3>
+                <p>third filler, should have at least four</p>
+            </div>
+
+            <div id="fourth" class="tabcontent">
+                <h3>fourth</h3>
+                <p>
+                    fourth filler, Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, harum aperiam voluptas veniam ad in.
+                </p>
+            </div>
         </div>
-      </div>
-      <div class="debri">
-        <blockquote>
-          <p>
-            Out beyond ideas of wrongdoing and rightdoing there is a field. I’ll
-            meet you there. <br />-Rumi
-          </p>
-        </blockquote>
-      </div>
 
-      <div class="debri">
-        <span class="contact--footer">
+        <div class="debri">
+            <blockquote>
+                <p>
+                    Out beyond ideas of wrongdoing and rightdoing there is a field. I’ll meet you there. <br />-Rumi
+                </p>
+            </blockquote>
+        </div>
+
+        <div class="debri">
+            <span class="contact--footer">
           <div>
             <a href="#sectionName" class="glow">
               <i class="fab fa-github-square fa-5x"></i>
             </a>
-                            <a href="#sectionName" class="glow"><i class="fab fa-linkedin fa-5x"></i
+            <a href="#sectionName" class="glow"
+              ><i class="fab fa-linkedin fa-5x"></i
             ></a>
-                            <a href="#sectionName" class="glow">
-                                <i class="fas fa-user-astronaut fa-3x"></i>
-                            </a>
-                            <a href="#sectionName" class="glow">
-                                <i class="fas fa-meteor fa-3x"></i>
-                            </a>
-                </div>
-                </span>
-            </div>
+            <a href="#sectionName" class="glow">
+              <i class="fas fa-user-astronaut fa-3x"></i>
+            </a>
+            <a href="#sectionName" class="glow">
+              <i class="fas fa-meteor fa-3x"></i>
+            </a>
+          </div>
+        </span>
+        </div>
     </main>
 
     <script type="module" src="/main.js"></script>
+    <script src="/index.js"></script>
 </body>
 
 </html>
