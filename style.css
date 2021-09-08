@@ -1,102 +1,117 @@
 canvas {
-position: fixed;
-top: 0;
-left: 0;
-margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
 }
 
 :root {
---bg0: #23292d;
---bg1: #42474b;
---bg2: #616668;
---bg3: #808486;
---bg4: #a0a2a4;
---bg5: #bfc0c2;
---bg6: #dedfdf;
---bg7: #fdfdfd;
---fg0: #ef4e7c;
---fg1: #f37055;
---fg2: #f79532;
---fg3: #6ebb82;
---fg4: #09b399;
---fg5: #1299ad;
---fg6: #5073b8;
---fg7: #a067ab;
-font-family: ubuntu, sans-serif;
-font-weight: 400;
-font-style: normal;
+    --bg0: #23292d;
+    --bg1: #42474b;
+    --bg2: #616668;
+    --bg3: #808486;
+    --bg4: #a0a2a4;
+    --bg5: #bfc0c2;
+    --bg6: #dedfdf;
+    --bg7: #fdfdfd;
+    --fg0: #ef4e7c;
+    --fg1: #f37055;
+    --fg2: #f79532;
+    --fg3: #6ebb82;
+    --fg4: #09b399;
+    --fg5: #1299ad;
+    --fg6: #5073b8;
+    --fg7: #a067ab;
+    font-family: ubuntu, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 * {
-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-padding: 0;
-margin: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    -webkit-animation:fadeIn 4.5s linear forwards;
+    -moz-animation:fadeIn 4.5s linear forwards;
+    animation:fadeIn 4.5s linear forwards;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
 main {
-width: 100vw;
-height: 100vh;
-z-index: 99;
-position: absolute;
-color: var(--fg5);
-width: 100%;
-margin: 0;
-padding: 120px 0px;
-overflow-y: scroll;
-scroll-snap-type: y mandatory;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+    position: absolute;
+    color: var(--fg5);
+    width: 100%;
+    margin: 0;
+    padding: 120px 0px;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
 }
 
 h1,
 h2,
 h3,
 blockquote {
-font-family: ubuntu, sans-serif;
-font-weight: 700;
-font-style: normal;
-z-index: 10;
+    font-family: ubuntu, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    z-index: 10;
 }
 
 canvas {
-position: fixed;
-top: 0;
-left: 0;
-padding: 0;
-margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
 }
 
 .glow {
-font-size: 1.25rem;
-color: inherit;
-text-align: center;
--webkit-animation: glow 4.5s ease-in-out infinite alternate;
--moz-animation: glow 4.5s ease-in-out infinite alternate;
-animation: glow 4.5s ease-in-out infinite alternate;
+    font-size: 1.25rem;
+    color: inherit;
+    text-align: center;
+    -webkit-animation: glow 4.5s ease-in-out infinite alternate;
+    -moz-animation: glow 4.5s ease-in-out infinite alternate;
+    animation: glow 4.5s ease-in-out infinite alternate;
 }
 
 @keyframes glow {
-from {
-    text-shadow: 0 0 0px var(--fg1);
-}
+    from {
+        text-shadow: 0 0 0px var(--fg1);
+    }
 
-to {
-    text-shadow: 0 0 50px #f36f5586;
-}
+    to {
+        text-shadow: 0 0 50px #f36f5586;
+    }
 }
 
 header {
-background-color: var(--bg0);
-color: var(--fg2);
-padding: 2rem;
-height: 85%;
-width: 40%;
-top: 0;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-text-align: right;
+    background-color: var(--bg0);
+    color: var(--fg2);
+    padding: 2rem;
+    height: 85%;
+    width: 40%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: right;
 }
 
 header h1 {
@@ -109,77 +124,82 @@ header h3 {
 
 
 .debri {
-height: 100vh;
-margin: .75rem;
-padding: 1rem 0.75rem;
-scroll-snap-align: center;
-display: flex;
-align-items: flex-end;
+    height: 100vh;
+    margin: .75rem;
+    padding: 1rem 0.75rem;
+    scroll-snap-align: center;
+    display: flex;
+    align-items: flex-end;
 }
 
 .myStuffs {
-height: inherit;
+    height: inherit;
 }
 
 /* about class */
 
 .about {
-background-color: #dbdbdb6e;
-border-top: 2rem solid var(--bg7);
-border-left: 2rem solid var(--bg7);
-border-radius: .5rem 0 0 0;
-color: var(--bg0);
+    background-color: #dbdbdbc0;
+    border-top: 2rem solid var(--bg7);
+    border-left: 2rem solid var(--bg7);
+    border-radius: .5rem 0 0 0;
+    color: var(--bg0);
+    justify-content: center;
+    align-items: center;
+    padding: 0 6rem;
+    font-weight: bold;
 }
 
 .about h2 {
-text-align: right;
-font-size: 5rem;
+    text-align: right;
+    font-size: 5rem;
 }
 
 .about p {
-font-size: 2.75rem;
+    font-size: 1.75rem;
 }
 
 /* portfolio class */
 
 .portfolio {
-justify-content: space-between;
-align-items: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Style the tab */
 
 .tab {
-float: left;
-border: 5px solid var(--bg0);
-background-color: #23292dce;
-border-right: none;
-width: 30%;
-border-radius: 0.75rem 0 0 0.75rem;
+    float: left;
+    border: 5px solid var(--bg0);
+    background-color: #23292dce;
+    border-right: none;
+    width: 30%;
+    border-radius: 0.75rem 0 0 0.75rem;
 }
 
 /* Style the buttons that are used to open the tab content */
 
 .tab button {
-display: block;
-background-color: inherit;
-color: var(--bg6);
-font-size: 1.25rem;
-padding: 22px 16px;
-border: none;
-border-right: 5px solid var(--fg1);
-width: 100%;
-outline: none;
-text-align: right;
-cursor: pointer;
-transition: 0.3s;
+    display: block;
+    background-color: inherit;
+    color: var(--bg6);
+    font-size: 1.25rem;
+    padding: 22px 16px;
+    border: none;
+    border-right: 5px solid var(--fg1);
+    width: 100%;
+    outline: none;
+    text-align: right;
+    cursor: pointer;
+    transition: 0.1s;
 }
 
 /* Change background color of buttons on hover */
 
 .tab button:hover {
-background-color: var(--fg1);
-color: var(--bg0);
+    background-color: var(--fg1);
+    color: var(--bg0);
+    border-right: 5px solid var(--bg7);
 }
 
 /* Create an active/current "tab button" class */
@@ -189,69 +209,91 @@ color: var(--bg0);
 /* Style the tab content */
 
 .tabcontent {
-float: left;
-padding: 0 3rem;
-margin-left: .75rem;
-border: 1.25rem solid var(--bg0);
-border-radius: 0 0.5rem 0.5rem 0;
-background-color: #23292dce;
-color: var(--fg1);
-width: 70%;
-border-left: 2.25rem solid var(--fg1);
-height: 600px;
+    float: left;
+    padding: 1rem;
+    margin-left: .75rem;
+    border: 1.25rem solid var(--bg0);
+    border-radius: 0 0.5rem 0.5rem 0;
+    text-align: right;
+    background-color: #23292dce;
+    color: var(--fg1);
+    width: 70%;
+    border-left: .75rem solid var(--fg1);
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.tabcontent figure {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabcontent figure img {
+    width: 55%;
+    height: auto;
+}
+
+.tabcontent figure figcaption {
+    color: var(--bg6);
+}
+
+.tabcontent figure figcaption a {
+    text-decoration: none;
+    color: var(--fg3);
+}
+
+.tabcontent figure figcaption a:hover {
+    text-decoration: underline;
+    color: var(--fg5);
 }
 
 .tabcontent h3 {
-font-size: 2.75rem;
+    font-size: 2.75rem;
 }
 
 /* rumi blockquote */
 
 .rumi {
-padding: 6rem 4rem;
-font-size: 4.25rem;
-border-radius: 3.75rem 0 3.75rem;
-border-right: 2rem solid var(--bg0);
-border-bottom: 2rem solid var(--bg0);
-color: var(--fg0);
-background-color: #23292dce;
-text-align: right;
--webkit-animation: rumi 4.5s 1s linear infinite;
--moz-animation: rumi 4.5s 1s linear infinite;
-animation: rumi 4.5s 1s linear infinite;
+    padding: 6rem 4rem;
+    font-size: 3.25rem;
+    width: 100%;
+    border-radius: 3.75rem 0 3.75rem;
+    border-right: 2rem solid var(--bg0);
+    border-bottom: 2rem solid var(--bg0);
+    color: var(--fg0);
+    background-color: #23292dce;
+    text-align: right;
+    -webkit-animation: rumi 4.5s 1s linear infinite;
+    -moz-animation: rumi 4.5s 1s linear infinite;
+    animation: rumi 4.5s 1s linear infinite;
 }
 
 @keyframes rumi {
-0% {
-    
-    
+    0% {
+        color: var(--fg0);
+    }
+    25% {
+        color: var(--fg2);
+    }
+    50% {
+        color: var(--fg4);
+    }
+    75% {
+        color: var(--fg6);
+    }
+    100% {
+        color: var(--fg7);
+    }
 }
 
-25% {
-    color: var(--fg1);
-    
-    
-}
-
-50% {
-    
-    
-    color: var(--fg3);
-    
-}
-
-75% {
-    color: var(--fg4);
-    
-}
-
-100% {
-
-    color: var(--fg6);
-
-}
-
-}
 .rumi p {
     width: 100%;
 }
