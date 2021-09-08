@@ -1,155 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./assets/galactic-republic-brands.svg" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./assets/galactic-republic-brands.svg"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>three js portfolio</title>
-    <script defer src="https://kit.fontawesome.com/91dbfff463.js" crossorigin="anonymous"></script>
-</head>
+    <script
+      defer
+      src="https://kit.fontawesome.com/91dbfff463.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <canvas id="bg"></canvas>
     <main>
-        <nav>
-            <!-- <div class="glow">
-          <a href="!#" class="glow-link">about</a>
-          <a href="!#" class="glow-link">link</a>
-          <a href="!#" class="glow-link">link</a>
-          <a href="!#" class="glow-link">link</a>
-          <a href="!#" class="glow-link">link</a>
-        </div> -->
-        </nav>
+      <div class="debri">
+        <header>
+          <div>
+            <h1>Phillip Shields</h1>
+            <h3>Noob All Star <i class="fas fa-user-astronaut"></i></h3>
+            <h4>three.js cv playground</h4>
+            <h4>🚧🚧🚧 under construction 🚧🚧🚧</h4>
+            <h5>only currently configured for large displays</h5>
+            <h6>that was the last one ...</h6>
+          </div>
+          <h4 class="glow">
+            scroll down
+            <i class="fas fa-arrow-down"></i>
+            <i class="fas fa-arrow-down"></i>
+            <i class="fas fa-arrow-down"></i>
+          </h4>
+        </header>
+      </div>
 
-        <div class="debri">
-            <header class="glow">
-                <h1>Phillip Shields</h1>
-                <p><i class="fas fa-user-astronaut"></i> Noob All Star</p>
-                <h4>three.js cv playground</h4>
-                <h4>
-                    🚧🚧🚧🚧🚧🚧 <br /> under construction <br />
-                    <br /> scroll down
-                    <i class="fas fa-arrow-down"></i>
-                    <i class="fas fa-arrow-down"></i>
-                    <i class="fas fa-arrow-down"></i>
-                </h4>
-            </header>
+      <div class="debri">
+        <blockquote class="myStuffs">
+          <p>where i does my stuffs</p>
+        </blockquote>
+      </div>
+
+      <div class="debri about glow">
+        <div>
+          <h2>About</h2>
+          <p>
+            I am a digital representation of where phill is at as a 'dev'. It's
+            not much, but I am trying to push more code. I am into blockchain
+            tech and web dev (<em>mostly front end</em>)
+          </p>
         </div>
+      </div>
 
-        <div class="debri">
-            <blockquote class="myStuffs">
-                <p>where i does my stuffs</p>
-            </blockquote>
-        </div>
-
-        <div class="debri about glow">
-            <h2>About</h2>
-            <p>
-                I am a digital representation of where phill is at as a 'dev'. It's not much, but I am trying to push more code. I am into blockchain tech and web dev (<em>mostly front end</em>)
-            </p>
-        </div>
-
-        <!-- portfolio debri -->
-        <div class="debri portfolio">
-
-            <div class="tab">
-                <button class="tablinks active" onclick="openTab(event, 'first')">
+      <!-- portfolio debri -->
+      <div class="debri portfolio">
+        <div class="tab">
+          <button class="tablinks" onclick="openTab(event, 'first')">
             first thing
           </button>
-                <button class="tablinks" onclick="openTab(event, 'second')">
+          <button class="tablinks" onclick="openTab(event, 'second')">
             second thing
           </button>
-                <button class="tablinks" onclick="openTab(event, 'third')">
+          <button class="tablinks" onclick="openTab(event, 'third')">
             third thing
           </button>
-                <button class="tablinks" onclick="openTab(event, 'fourth')">
+          <button class="tablinks" onclick="openTab(event, 'fourth')">
             fourth thing
           </button>
-            </div>
-
-            <div id="first" class="tabcontent">
-                <h3>some filler</h3>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati adipisci corrupti deserunt quidem, quaerat minima similique placeat totam laboriosam rem autem minus accusantium ad.
-                </p>
-            </div>
-
-            <div id="second" class="tabcontent">
-                <h3>second filler</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quidem aliquid accusantium magni nihil, nulla veritatis voluptatem saepe similique, ullam quaerat minima voluptatum. Ab odio alias in earum nostrum dolor?
-                </p>
-            </div>
-
-            <div id="third" class="tabcontent">
-                <h3>third</h3>
-                <p>third filler, should have at least four</p>
-            </div>
-
-            <div id="fourth" class="tabcontent">
-                <h3>fourth</h3>
-                <p>
-                    fourth filler, Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, harum aperiam voluptas veniam ad in.
-                </p>
-            </div>
         </div>
 
-        <div class="debri">
-            <blockquote>
-                <p>
-                    Out beyond ideas of wrongdoing and rightdoing there is a field. I’ll meet you there. <br />-Rumi
-                </p>
-            </blockquote>
+        <div id="first" class="tabcontent">
+          <h3>some filler</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati
+            adipisci corrupti deserunt quidem, quaerat minima similique placeat
+            totam laboriosam rem autem minus accusantium ad.
+          </p>
         </div>
 
-        <div class="debri">
-            <span class="contact--footer">
+        <div id="second" class="tabcontent">
+          <h3>second filler</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            quidem aliquid accusantium magni nihil, nulla veritatis voluptatem
+            saepe similique, ullam quaerat minima voluptatum. Ab odio alias in
+            earum nostrum dolor?
+          </p>
+        </div>
+
+        <div id="third" class="tabcontent">
+          <h3>third</h3>
+          <p>third filler, should have at least four</p>
+        </div>
+
+        <div id="fourth" class="tabcontent">
+          <h3>fourth</h3>
+          <p>
+            fourth filler, Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Assumenda, harum aperiam voluptas veniam ad in.
+          </p>
+        </div>
+      </div>
+
+      <div class="debri">
+        <p class="rumi">
+          Out beyond ideas of wrongdoing and rightdoing there is a field. I’ll
+          meet you there. <br />-Rumi
+        </p>
+      </div>
+
+      <div class="debri">
+        <span class="contact--footer">
           <div>
-            <a href="#sectionName" class="glow">
+            <a
+              href="https://github.com/Phillip-D-Shields"
+              target="_blank"
+              rel="noopener"
+              class="glow"
+            >
               <i class="fab fa-github-square fa-5x"></i>
             </a>
-            <a href="#sectionName" class="glow"
+            <a
+              href=" https://www.linkedin.com/in/phillip-d-shields"
+              target="_blank"
+              rel="noopener"
+              class="glow"
               ><i class="fab fa-linkedin fa-5x"></i
             ></a>
-            <a href="#sectionName" class="glow">
+            <a
+              href="https://www.jpl.nasa.gov/galleries/visions-of-the-future"
+              target="_blank"
+              rel="noopener"
+              class="glow"
+            >
               <i class="fas fa-user-astronaut fa-3x"></i>
             </a>
-            <a href="#sectionName" class="glow">
+            <a
+              href="https://youtu.be/dQw4w9WgXcQ?t=1"
+              target="_blank"
+              rel="noopener"
+              class="glow"
+            >
               <i class="fas fa-meteor fa-3x"></i>
             </a>
           </div>
         </span>
-        </div>
+      </div>
     </main>
 
     <script>
-        const openTab = (e, cityName) => {
-            // Declare all variables
-            var i, tabcontent, tablinks;
+      const openTab = (e, cityName) => {
+        // Declare all variables
+        var i, tabcontent, tablinks;
 
-            // Get all elements with class="tabcontent" and hide them
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-
-            // Get all elements with class="tablinks" and remove the class "active"
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-
-            // Show the current tab, and add an "active" class to the link that opened the tab
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active";
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
         }
 
-        openTab();
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the link that opened the tab
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      };
+
+      openTab();
     </script>
 
     <script type="module" src="/main.js"></script>
-
-</body>
-
+  </body>
 </html>

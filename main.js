@@ -3,9 +3,6 @@ import './style.css'
 import * as THREE from "three";
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import phillImg from './assets/me.jpeg'
-// import spaceImg from './assets/bg.png'
-import earthImg from './assets/earth.jpg'
-import marsImg from './assets/mars.jpg'
 
 // ! scene ========================
 const scene = new THREE.Scene();
@@ -85,7 +82,7 @@ scene.add(phillCube)
 
 const mars = new THREE.Mesh(
     new THREE.SphereGeometry(50, 150, 150),
-    new THREE.MeshBasicMaterial({ color: 0x23292d, wireframe: true })
+    new THREE.MeshBasicMaterial({ color: 0x6ebb82, wireframe: true })
 )
 
 scene.add(mars)
@@ -95,7 +92,7 @@ scene.add(mars)
 
 const earth = new THREE.Mesh(
     new THREE.SphereGeometry(100, 300, 300),
-    new THREE.MeshBasicMaterial({ color: 0xef4e7c, wireframe: true }),
+    new THREE.MeshBasicMaterial({ color: 0xf37055, wireframe: true }),
 
 )
 
@@ -159,8 +156,8 @@ function animate() {
 
     phillCube.rotation.x -= 0.001;
     phillCube.rotation.y -= 0.001;
-    phillCube.position.z += 0.065
-    phillCube.position.y += 0.025
+    phillCube.position.z += 0.085
+    phillCube.position.y += 0.0025
         // controls.update();
 
     renderer.render(scene, camera);
