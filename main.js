@@ -24,8 +24,8 @@ camera.position.setZ(0);
 renderer.render(scene, camera)
 
 // ! torus shape object ==============
-const geometry = new THREE.RingGeometry(0.75, 250, 250, 200)
-const material = new THREE.MeshBasicMaterial({ color: 0x1299ad, wireframe: true, });
+const geometry = new THREE.RingGeometry(10, 300, 250, 360)
+const material = new THREE.MeshBasicMaterial({ color: 0x073642, wireframe: true, });
 const torus = new THREE.Mesh(geometry, material)
 
 scene.add(torus);
@@ -81,8 +81,8 @@ scene.add(phillCube)
 // const marsTexture = new THREE.TextureLoader().load(marsImg)
 
 const mars = new THREE.Mesh(
-    new THREE.SphereGeometry(50, 150, 150),
-    new THREE.MeshBasicMaterial({ color: 0x6ebb82, wireframe: true })
+    new THREE.SphereGeometry(200, 50, 50),
+    new THREE.MeshBasicMaterial({ color: 0xd33682, wireframe: true })
 )
 
 scene.add(mars)
@@ -91,8 +91,8 @@ scene.add(mars)
 // const earthTexture = new THREE.TextureLoader().load(earthImg)
 
 const earth = new THREE.Mesh(
-    new THREE.SphereGeometry(100, 300, 300),
-    new THREE.MeshBasicMaterial({ color: 0xf37055, wireframe: true }),
+    new THREE.SphereGeometry(700, 200, 30),
+    new THREE.MeshBasicMaterial({ color: 0x2aa198, wireframe: true }),
 
 )
 

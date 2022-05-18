@@ -1,336 +1,387 @@
 canvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
 }
 
 :root {
-    --bg0: #23292d;
-    --bg1: #42474b;
-    --bg2: #616668;
-    --bg3: #808486;
-    --bg4: #a0a2a4;
-    --bg5: #bfc0c2;
-    --bg6: #dedfdf;
-    --bg7: #fdfdfd;
-    --fg0: #ef4e7c;
-    --fg1: #f37055;
-    --fg2: #f79532;
-    --fg3: #6ebb82;
-    --fg4: #09b399;
-    --fg5: #1299ad;
-    --fg6: #5073b8;
-    --fg7: #a067ab;
-    font-family: ubuntu, sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  --dark-shade0: #002b36;
+  --dark-shade1: #073642;
+  --dark-shade2: #586e75;
+  --dark-shade3: #657b83;
+  --dark-shade4: #839496;
+  --dark-shade5: #93a1a1;
+  --dark-shade6: #eee8d5;
+  --dark-shade7: #fdf6e3;
+  --dark-accent0: #dc322f;
+  --dark-accent1: #cb4b16;
+  --dark-accent2: #b58900;
+  --dark-accent3: #859900;
+  --dark-accent4: #2aa198;
+  --dark-accent5: #268bd2;
+  --dark-accent6: #6c71c4;
+  --dark-accent7: #d33682;
+  --light-shade0: #fdf6e3;
+  --light-shade1: #eee8d5;
+  --light-shade2: #93a1a1;
+  --light-shade3: #839496;
+  --light-shade4: #657b83;
+  --light-shade5: #586e75;
+  --light-shade6: #073642;
+  --light-shade7: #002b36;
+  --light-accent0: #dc322f;
+  --light-accent1: #cb4b16;
+  --light-accent2: #b58900;
+  --light-accent3: #859900;
+  --light-accent4: #2aa198;
+  --light-accent5: #268bd2;
+  --light-accent6: #6c71c4;
+  --light-accent7: #d33682;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    padding: 0;
-    margin: 0;
-    opacity: 0;
-    -webkit-animation:fadeIn 4.5s linear forwards;
-    -moz-animation:fadeIn 4.5s linear forwards;
-    animation:fadeIn 4.5s linear forwards;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  -webkit-animation: fadeIn 4.5s linear forwards;
+  -moz-animation: fadeIn 4.5s linear forwards;
+  animation: fadeIn 4.5s linear forwards;
+  font-family: "Nunito", sans-serif;
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
+  from {
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
-
 main {
-    width: 100vw;
-    height: 100vh;
-    z-index: 99;
-    position: absolute;
-    color: var(--fg5);
-    width: 100%;
-    margin: 0;
-    padding: 120px 0px;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+  position: absolute;
+  color: var(--dark-shade6);
+  width: 100%;
+  margin: 0;
+  padding: 120px 0px;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
 
 h1,
 h2,
 h3,
 blockquote {
-    font-family: ubuntu, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    z-index: 10;
+  z-index: 10;
 }
 
 canvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 0;
-    margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .glow {
-    font-size: 1.25rem;
-    color: inherit;
-    text-align: center;
-    -webkit-animation: glow 4.5s ease-in-out infinite alternate;
-    -moz-animation: glow 4.5s ease-in-out infinite alternate;
-    animation: glow 4.5s ease-in-out infinite alternate;
+  font-size: 1.25rem;
+  color: inherit;
+  text-align: center;
+  -webkit-animation: glow 4.5s ease-in-out infinite alternate;
+  -moz-animation: glow 4.5s ease-in-out infinite alternate;
+  animation: glow 4.5s ease-in-out infinite alternate;
 }
 
 @keyframes glow {
-    0% {
-        text-shadow: 0 0 25px var(--fg0);
-    }
+  0% {
+    text-shadow: 0 0 25px var(--dark-accent0);
+  }
 
-    12.5% {
-        text-shadow: 0 0 25px var(--fg1);
-    }
-    25% {
-        text-shadow: 0 0 25px var(--fg2);
-    }
-    37.5% {
-        text-shadow: 0 0 25px var(--fg3);
-    }
-    50% {
-        text-shadow: 0 0 25px var(--fg4);
-    }
-    62.5% {
-        text-shadow: 0 0 25px var(--fg5);
-    }
-    75% {
-        text-shadow: 0 0 25px var(--fg6);
-    }
-    87.5% {
-        text-shadow: 0 0 25px var(--fg7);
-    }
-    100% {
-        text-shadow: 0 0 25px var(--fg0);
-    }
+  12.5% {
+    text-shadow: 0 0 25px var(--dark-accent1);
+  }
+  25% {
+    text-shadow: 0 0 25px var(--dark-accent2);
+  }
+  37.5% {
+    text-shadow: 0 0 25px var(--dark-accent3);
+  }
+  50% {
+    text-shadow: 0 0 25px var(--dark-accent4);
+  }
+  62.5% {
+    text-shadow: 0 0 25px var(--dark-accent5);
+  }
+  75% {
+    text-shadow: 0 0 25px var(--dark-accent6);
+  }
+  100% {
+    text-shadow: 0 0 25px var(--dark-accent7);
+  }
 }
 
 header {
-    background-color: #23292db4;
-    border-top: .25rem solid var(--bg7);
-    border-right: .25rem solid var(--bg7);
-    color: var(--fg5);
-    padding: 1rem;
-    height: 85%;
-    width: 40%;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: right;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(25px);
+  border-top: 0.25rem solid var(--light-shade2);
+  border-right: 0.25rem solid var(--light-shade5);
+  color: var(--light-accent3);
+  padding: 1rem;
+  height: 85%;
+  width: 60%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: right;
 }
 
 header h1 {
-    font-size: 4rem;
+  font-size: 6rem;
 }
 
 header h3 {
-    font-size: 2.25rem;
+  font-size: 3.25rem;
 }
 
-
 .debri {
-    height: 100vh;
-    margin: .75rem;
-    padding: 1rem 0.75rem;
-    scroll-snap-align: center;
-    display: flex;
-    align-items: flex-end;
+  height: 95vh;
+  margin: 2.5vh 0;
+  scroll-snap-align: center;
+  display: flex;
+  align-items: flex-end;
 }
 
 .myStuffs {
-    height: inherit;
+  height: inherit;
 }
 
 /* about class */
 
 .about {
-    background-color: #23292d86;
-    border: .25rem solid var(--bg7);
-    color: var(--bg6);
-    justify-content: center;
-    align-items: center;
-    padding: 0 6rem;
-    font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(25px);
+  border: 7rem solid var(--dark-shade2);
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-weight: bold;
+  -webkit-animation: rumi 4.5s ease-in-out infinite alternate;
+  -moz-animation: rumi 4.5s ease-in-out infinite alternate;
+  animation: rumi 4.5s ease-in-out infinite alternate;
 }
 
 .about h2 {
-    text-align: right;
-    font-size: 5rem;
+  font-size: 6rem;
 }
 
 .about p {
-    font-size: 2rem;
+  font-size: 1.5rem;
+}
+/* section wall */
+section {
+  background-color: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(25px);
+  border: 2.25rem solid rgba(0, 0, 0, 0.45);
+  padding: 2rem;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: space-evenly;
+  scroll-snap-align: center;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  gap: 0.25rem;
+}
+
+.cube {
+  flex: 1;
+  border: 1.25rem solid rgba(0, 0, 0, 0.75);
+  -webkit-animation: glow 4.5s linear infinite alternate;
+  -moz-animation: glow 4.5s linear infinite alternate;
+  animation: glow 4.5s linear infinite alternate;
 }
 
 /* portfolio class */
 
 .portfolio {
-    justify-content: space-between;
-    align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Style the tab */
 
 .tab {
-    float: left;   
-    width: 200px;
+  float: left;
+  width: 300px;
 }
 
 /* Style the buttons that are used to open the tab content */
 
 .tab button {
-    display: block;
-    background-color: inherit;
-    color: var(--bg6);
-    font-size: 1.25rem;
-    padding: .25rem .75rem;
-    border: none;
-    border-left: 5px solid var(--bg6);
-    width: 100%;
-    outline: none;
-    cursor: pointer;
-    text-align: left;
-    transition: 0.1s;
+  display: block;
+  background-color: inherit;
+  color: var(--light-accent5);
+  font-size: 1.75rem;
+  padding: 1.25rem 1.75rem;
+  border: none;
+  border-left: 5px solid var(--light-accent6);
+  width: 100%;
+  outline: none;
+  cursor: pointer;
+  text-align: left;
+  transition: 0.1s;
 }
 
 /* Change background color of buttons on hover */
 
 .tab button:hover {
-    background-color: var(--fg6);
-    color: var(--bg0);
-    border-right: 2px solid var(--bg6);
-    border-left: 5px solid var(--fg6);
+  background-color: var(--light-shade5);
+  color: var(--bg0);
+  border-right: 2px solid var(--light-shade0);
+  border-left: 5px solid var(--light-shade1);
 }
 
 /* Create an active/current "tab button" class */
 
-
-
 /* Style the tab content */
 
 .tabcontent {
-    float: left;
-    padding: 1rem;
-    border: .25rem solid var(--bg6);
-    text-align: right;
-    background-color: #42474bbd;
-    color: var(--bg6);
-    width: 100%;
-    height: 100%; 
+  float: left;
+  padding: 1rem;
+  border: 0.25rem solid var(--bg6);
+  text-align: right;
+  background-color: rgba(35, 35, 35, 0.75);
+  backdrop-filter: blur(25px);
+  color: var(--dark-accent5);
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
 }
 
 .tabcontent figure {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
+  border: 0.75rem solid var(--dark-accent1);
+  padding: 2rem 1rem;
+  display: flex;
+  font-size: 1.25rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .long {
-    width: 300px;
-    flex: 1;
+  width: 300px;
+  flex: 1;
 }
 
 .tabcontent figure img {
-    width: auto;
-    height: 75%;
+  width: 50%;
+  height: auto;
+  margin-bottom: 2rem;
 }
 
 .tabcontent figure figcaption {
-    color: var(--bg6);
+  color: var(--dark-accent2);
+  font-size: 1.5rem;
 }
 
 .tabcontent figure figcaption a {
-    text-decoration: none;
-    color: var(--fg2);
+  text-decoration: none;
+  color: var(--dark-accent5);
 }
 
 .tabcontent figure figcaption a:hover {
-    text-decoration: underline;
-    color: var(--bg1);
+  text-decoration: underline;
+  color: var(--bg1);
 }
 
 .tabcontent h3 {
-    font-size: 2.75rem;
+  font-size: 2.75rem;
 }
 
 /* rumi blockquote */
-
 .rumi {
-    padding: 2rem;
-    font-size: 3.25rem;
-    width: 100%;
-    border-radius: .25rem 0 .25rem;
-    border: .25rem solid var(--bg1);
-    color: var(--fg0);
-    background-color: #42474bbd;
-    text-align: right;
-    -webkit-animation: rumi 4.5s 1s linear infinite;
-    -moz-animation: rumi 4.5s 1s linear infinite;
-    animation: rumi 4.5s 1s linear infinite;
-    align-self: center;
+  padding: 2rem;
+  font-size: 3.25rem;
+  width: 100%;
+  border-radius: 0.25rem 0 0.25rem;
+  border: 0.25rem solid var(--dark-accent5);
+  color: var(--dark-shade6);
+  text-align: right;
+  -webkit-animation: rumi 10s linear infinite;
+  -moz-animation: rumi 10s linear infinite;
+  animation: rumi 10s linear infinite;
+  align-self: center;
 }
 
 @keyframes rumi {
-    0% {
-        color: var(--fg0);
-    }
-    25% {
-        color: var(--fg2);
-    }
-    50% {
-        color: var(--fg4);
-    }
-    75% {
-        color: var(--fg6);
-    }
-    100% {
-        color: var(--fg7);
-    }
+  0% {
+    color: var(--light-accent0);
+    background-color: var(--light-shade7);
+  }
+  15% {
+    color: var(--light-accent1);
+    background-color: var(--light-shade7);
+  }
+  20% {
+    color: var(--light-accent2);
+    background-color: var(--light-shade6);
+  }
+  35% {
+    color: var(--light-accent3);
+    background-color: var(--light-shade5);
+  }
+  50% {
+    color: var(--light-accent4);
+    background-color: var(--light-shade4);
+  }
+  65% {
+    color: var(--light-accent5);
+    background-color: var(--light-shade5);
+  }
+  85% {
+    color: var(--light-accent6);
+    background-color: var(--light-shade6);
+  }
+  100% {
+    color: var(--light-accent7);
+    background-color: var(--light-shade7);
+  }
 }
 
+
 .rumi p {
-    width: 100%;
+  width: 100%;
 }
 
 /* contact class */
 .contact--footer {
-    width: 75%;
-    display: flex;
-    justify-content: space-around;
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
 }
 
 .contact--footer div {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .contact--footer div a {
-    color: var(--fg1);
+  color: var(--fg1);
 }
 
 .contact--footer div a:hover {
-    color: var(--fg2);
+  color: var(--fg2);
 }
