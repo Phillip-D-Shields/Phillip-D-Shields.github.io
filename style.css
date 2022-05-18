@@ -135,7 +135,7 @@ header {
   border-top: 0.25rem solid var(--light-shade2);
   border-right: 0.25rem solid var(--light-shade5);
   color: var(--light-accent3);
-  padding: 1rem;
+  padding: 1rem 3rem;
   height: 85%;
   width: 60%;
   top: 0;
@@ -153,6 +153,10 @@ header h3 {
   font-size: 3.25rem;
 }
 
+header h4 {
+  font-size: 2rem;
+}
+
 .debri {
   height: 95vh;
   margin: 2.5vh 0;
@@ -168,16 +172,14 @@ header h3 {
 /* about class */
 
 .about {
-  background-color: rgba(255, 255, 255, 0.85);
+  z-index: 20;
+  background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(25px);
-  border: 7rem solid var(--dark-shade2);
+  color: var(--dark-accent3);
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 2rem 6rem;
   font-weight: bold;
-  -webkit-animation: rumi 4.5s ease-in-out infinite alternate;
-  -moz-animation: rumi 4.5s ease-in-out infinite alternate;
-  animation: rumi 4.5s ease-in-out infinite alternate;
 }
 
 .about h2 {
@@ -189,9 +191,11 @@ header h3 {
 }
 /* section wall */
 section {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.35);
   backdrop-filter: blur(25px);
-  border: 2.25rem solid rgba(0, 0, 0, 0.45);
+  border-left: 3.25rem solid #268ad24b;
+  border-top: 3.25rem solid #268ad24b;
+  border-right: 3.25rem solid #268ad24b;
   padding: 2rem;
   margin: 0;
   width: 100%;
@@ -199,17 +203,17 @@ section {
   display: grid;
   justify-content: space-evenly;
   scroll-snap-align: center;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(10, 1fr);
-  gap: 0.25rem;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+  gap: 1.25rem;
 }
 
 .cube {
-  flex: 1;
+  height: 5rem;
   border: 1.25rem solid rgba(0, 0, 0, 0.75);
-  -webkit-animation: glow 4.5s linear infinite alternate;
-  -moz-animation: glow 4.5s linear infinite alternate;
-  animation: glow 4.5s linear infinite alternate;
+  background-color: var(--dark-accent3);
+  border-radius: .75rem;
+  z-index: -5;
 }
 
 /* portfolio class */
@@ -235,7 +239,7 @@ section {
   font-size: 1.75rem;
   padding: 1.25rem 1.75rem;
   border: none;
-  border-left: 5px solid var(--light-accent6);
+  border-left: 5px solid var(--light-accent7);
   width: 100%;
   outline: none;
   cursor: pointer;
@@ -261,8 +265,7 @@ section {
   padding: 1rem;
   border: 0.25rem solid var(--bg6);
   text-align: right;
-  background-color: rgba(35, 35, 35, 0.75);
-  backdrop-filter: blur(25px);
+  background-color: rgba(35, 35, 35, 0.95);
   color: var(--dark-accent5);
   width: 100%;
   height: 100%;
@@ -306,7 +309,7 @@ section {
 }
 
 .tabcontent h3 {
-  font-size: 2.75rem;
+  font-size: 3.75rem;
 }
 
 /* rumi blockquote */
