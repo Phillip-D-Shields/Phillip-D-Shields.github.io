@@ -130,7 +130,7 @@ canvas {
 }
 
 header {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(25px);
   border-top: 0.25rem solid var(--light-shade2);
   border-right: 0.25rem solid var(--light-shade5);
@@ -173,7 +173,7 @@ header h4 {
 
 .about {
   z-index: 20;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(25px);
   color: var(--dark-accent3);
   justify-content: center;
@@ -214,6 +214,12 @@ section {
   background-color: var(--dark-accent3);
   border-radius: .75rem;
   z-index: -5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-animation: rumi 10s linear infinite;
+  -moz-animation: rumi 10s linear infinite;
+  animation: rumi 10s linear infinite;
 }
 
 /* portfolio class */
